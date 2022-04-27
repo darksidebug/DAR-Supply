@@ -19676,8 +19676,6 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var vue_router__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! vue-router */ "./node_modules/vue-router/dist/vue-router.esm-bundler.js");
 /* harmony import */ var _routes__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./routes */ "./resources/js/routes.js");
 /* harmony import */ var _pages_login__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./pages/login */ "./resources/js/pages/login.vue");
-// import { createApp } from "vue";
-// createApp(App).mount("#app");
 __webpack_require__(/*! ./bootstrap */ "./resources/js/bootstrap.js");
 
 
@@ -19688,10 +19686,7 @@ var router = vue_router__WEBPACK_IMPORTED_MODULE_3__.createRouter({
   history: vue_router__WEBPACK_IMPORTED_MODULE_3__.createWebHistory(),
   routes: _routes__WEBPACK_IMPORTED_MODULE_1__["default"]
 });
-vue__WEBPACK_IMPORTED_MODULE_0__.createApp(_pages_login__WEBPACK_IMPORTED_MODULE_2__["default"]).use(router).mount('#app'); // const app = new Vue({
-//     el: '#app',
-//     router: routes
-// });
+vue__WEBPACK_IMPORTED_MODULE_0__.createApp(_pages_login__WEBPACK_IMPORTED_MODULE_2__["default"]).use(router).mount('#app');
 
 /***/ }),
 

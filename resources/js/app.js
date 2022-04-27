@@ -1,9 +1,3 @@
-// import { createApp } from "vue";
-
-
-
-// createApp(App).mount("#app");
-
 require('./bootstrap');
 
 import * as Vue from 'vue';
@@ -17,10 +11,3 @@ const router = VueRouter.createRouter({
 });
 
 Vue.createApp(App).use(router).mount('#app');
-
-
-
-// const app = new Vue({
-//     el: '#app',
-//     router: routes
-// });
