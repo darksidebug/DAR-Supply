@@ -1,13 +1,13 @@
 require('./bootstrap');
 
-import * as Vue from 'vue';
-import * as VueRouter from 'vue-router';
-import routes from './routes';
-import App from "./pages/login";
+import { createApp } from "vue";
+import router from "./router";
+import Login from "./components/pages/Login.vue";
 
-const router = VueRouter.createRouter({
-    history: VueRouter.createWebHistory(),
-    routes,
-});
-
-Vue.createApp(App).use(router).mount('#app');
+createApp({
+    components:{
+        Login
+    }
+})
+.use(router)
+.mount("#app")
