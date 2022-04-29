@@ -3,6 +3,7 @@ import Login from "../components/pages/Login.vue";
 import Voucher from "../components/pages/Voucher.vue";
 import AddVoucher from "../components/pages/AddVoucher.vue";
 import Rpci from "../components/pages/RPCI.vue";
+import StockCard from "../components/pages/StockCard.vue"
 
 const routes = [
     {
@@ -24,6 +25,11 @@ const routes = [
         path: "/supply/rpci",
         name: "supply.rpci",
         component: Rpci
+    },
+    {
+        path: "/supply/stock-card",
+        name: "supply.stock-card",
+        component: StockCard
     }
 ];
 

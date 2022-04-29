@@ -1,10 +1,18 @@
 <template>
-    <navigation-bar />
+    <NavigationBar />
     <div class="flex justify-between items-center mt-7 px-4">
         <div class="flex justify-start items-center">
-            <search-bar />
-            <print-button />
-            <export-button />
+            <SearchBar />
+            <Button :className="'mr-1 py-2 px-3 rounded bg-gray-600 text-white'">
+                <svg xmlns="http://www.w3.org/2000/svg" class="inline-block mb-1 h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" 
+                stroke-linejoin="round"><polyline points="6 9 6 2 18 2 18 9"></polyline><path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"></path><rect x="6" y="14" width="12" height="8"></rect></svg>
+                Print
+            </Button>
+            <Button :className="'py-2 px-3 rounded bg-green4 text-white'">
+                <svg xmlns="http://www.w3.org/2000/svg" class="inline-block mb-1 h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" 
+                stroke-linejoin="round"><path d="M3 15v4c0 1.1.9 2 2 2h14a2 2 0 0 0 2-2v-4M17 8l-5-5-5 5M12 4.2v10.3"/></svg>
+                Export Excel
+            </Button>
         </div>
         <div class="flex justify-end items-center">
         </div>
@@ -105,17 +113,13 @@
 <script>
 import Navigation from "../templates/Navigation.vue"
 import SearchBar from "../templates/SearchBar.vue"
-import Print from "../templates/PrintButton.vue"
-import Export from "../templates/ExportButton.vue"
-import AddVoucherButton from "../templates/AddVoucherButton.vue"
+import Button from "../templates/Button.vue"
 
 export default {
     components: {
-        "navigation-bar" : Navigation,
-        "search-bar": SearchBar,
-        "print-button": Print,
-        "export-button" : Export,
-        "add-voucher-button": AddVoucherButton
+        "NavigationBar" : Navigation,
+        "SearchBar": SearchBar,
+        "Button": Button
     }
 }
 </script>
