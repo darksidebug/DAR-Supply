@@ -7,20 +7,19 @@
             <export-button />
         </div>
         <div class="flex justify-end items-center">
-            <add-voucher-button />
         </div>
     </div>
     <div class="mt-2 px-4">
         <div class="overflow-hidden border border-gray-200 rounded-md">
             <div class="flex justify-between items-center p-4 border-b border-gray-200 bg-white">
                 <div class="text-xl font-bold text-gray-600">
-                    <svg xmlns="http://www.w3.org/2000/svg" class="inline-block mb-1 mr-2 h-5 w-5" viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" stroke-width="2" stroke-linecap="round" 
-                    stroke-linejoin="round"><path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"></path></svg>
-                    <span class="inline-block">Vouchers List</span>
+                    <svg xmlns="http://www.w3.org/2000/svg" class="inline-block mb-1 mr-2 h-5 w-5" viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" stroke-width="3" stroke-linecap="round" 
+                    stroke-linejoin="round"><path d="M12 20v-6M6 20V10M18 20V4"/></svg>
+                    <span class="inline-block">Physical Count of Inventories</span>
                 </div>
                 <div class="flex justify-end items-center">
                     <span class="font-medium text-gray-600">Filter: &nbsp;</span>
-                    <input type="text" class="py-1 px-3 border border-gray-300 rounded focus:outline focus:outline-green4 focus:outline-1" placeholder="Search name of payee...">
+                    <input type="text" class="py-1 px-3 border border-gray-300 rounded focus:outline focus:outline-green4 focus:outline-1" placeholder="Search item...">
                 </div>
             </div>
             <table class="min-w-full bg-white">
@@ -31,37 +30,34 @@
                             All
                         </th>
                         <th scope="col" class="px-6 py-4 text-left">
-                            SL No.
+                            Status
                         </th>
                         <th scope="col" class="px-6 py-4 text-left">
-                            IAR No.
+                            Desc.
                         </th>
                         <th scope="col" class="px-6 py-4 text-left">
-                            DIV No.
+                            Stock No.
                         </th>
                         <th scope="col" class="px-6 py-4 text-left">
-                            Date
+                            Unit
                         </th>
                         <th scope="col" class="px-6 py-4 text-left">
-                            Requester
+                            Value
                         </th>
                         <th scope="col" class="px-6 py-4 text-left">
-                            Payee
+                            Balance
                         </th>
                         <th scope="col" class="px-6 py-4 text-left">
-                            Description
+                            On Hand
                         </th>
                         <th scope="col" class="px-6 py-4 text-left">
-                            Total
+                            Shortage/Over (Qty)
                         </th>
                         <th scope="col" class="px-6 py-4 text-left">
-                            PR No.
+                            Shortage/Over (Value)
                         </th>
                         <th scope="col" class="px-6 py-4 text-left">
-                            RESO No.
-                        </th>
-                        <th scope="col" class="px-6 py-4 text-left">
-                            PO No.
+                            Remarks
                         </th>
                     </tr>
                 </thead>
@@ -71,37 +67,34 @@
                             <input type="checkbox" class="default:ring-2 ..." />
                         </td>
                         <td class="text-sm text-gray-900 px-6 py-4 whitespace-nowrap">
-                            1
+                            
                         </td>
                         <td class="text-sm text-gray-900 px-6 py-4 whitespace-nowrap">
-                            2020-03-0876
+                            
                         </td>
                         <td class="text-sm text-gray-900 px-6 py-4 whitespace-nowrap">
-                            D-7844
+                            
                         </td>
                         <td class="text-sm text-gray-900 px-6 py-4 whitespace-nowrap">
-                            04-26-2020
+                            
                         </td>
                         <td class="text-sm text-gray-900 px-6 py-4 whitespace-nowrap">
-                            June Vic Cadayona
+                            
                         </td>
                         <td class="text-sm text-gray-900 px-6 py-4 whitespace-nowrap">
-                            Nobegin Masob
+                            
                         </td>
                         <td class="text-sm text-gray-900 px-6 py-4 whitespace-nowrap">
-                            Tissue
+                            
                         </td>
                         <td class="text-sm text-gray-900 px-6 py-4 whitespace-nowrap">
-                            400.00
+                            
                         </td>
                         <td class="text-sm text-gray-900 px-6 py-4 whitespace-nowrap">
-                            09747
+                            
                         </td>
                         <td class="text-sm text-gray-900 px-6 py-4 whitespace-nowrap">
-                            77-6012
-                        </td>
-                        <td class="text-sm text-gray-900 px-6 py-4 whitespace-nowrap">
-                            PO-02217
+                            
                         </td>
                     </tr>
                 </tbody>
@@ -112,16 +105,16 @@
 <script>
 import Navigation from "../templates/Navigation.vue"
 import SearchBar from "../templates/SearchBar.vue"
-import Export from "../templates/ExportButton.vue"
 import Print from "../templates/PrintButton.vue"
+import Export from "../templates/ExportButton.vue"
 import AddVoucherButton from "../templates/AddVoucherButton.vue"
 
 export default {
     components: {
         "navigation-bar" : Navigation,
         "search-bar": SearchBar,
+        "print-button": Print,
         "export-button" : Export,
-        "print-button" : Print,
         "add-voucher-button": AddVoucherButton
     }
 }

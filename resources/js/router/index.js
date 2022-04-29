@@ -2,6 +2,7 @@ import { createRouter, createWebHistory } from "vue-router";
 import Login from "../components/pages/Login.vue";
 import Voucher from "../components/pages/Voucher.vue";
 import AddVoucher from "../components/pages/AddVoucher.vue";
+import Rpci from "../components/pages/RPCI.vue";
 
 const routes = [
     {
@@ -18,6 +19,11 @@ const routes = [
         path: "/supply/add-voucher",
         name: "supply.add-voucher",
         component: AddVoucher
+    },
+    {
+        path: "/supply/rpci",
+        name: "supply.rpci",
+        component: Rpci
     }
 ];
 

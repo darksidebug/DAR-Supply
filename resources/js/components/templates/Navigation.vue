@@ -13,7 +13,7 @@
                         <router-link :to="{path: '/supply/voucher'}">
                             <a class="py-2 px-3 rounded-md font-medium text-gray-600 hover:text-white hover:bg-green4">Vouchers</a>
                         </router-link>
-                        <router-link :to="{path: ''}">
+                        <router-link :to="{path: '/supply/rpci'}">
                             <a class="py-2 px-3 rounded-md font-medium text-gray-600 hover:text-white hover:bg-green4">RPCI</a>
                         </router-link>
                         <router-link :to="{path: ''}">
